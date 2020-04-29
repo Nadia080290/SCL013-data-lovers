@@ -1,0 +1,89 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    font-size: 35px;
+    
+}
+body{
+    font-family:"BluuNextBold";
+    background:url("fondomorado2.jpg");
+    background-repeat:no-repeat;
+    background-size: 100%;
+}
+ul{
+    list-style: none;
+}
+img{
+    width: 40px ;
+}
+input[type="checkbox"]
+{
+ display: none;
+}
+nav{
+    background-color:  #24152F;
+    width: 400px;
+    height: 100%;
+    left: -400px;
+    position: absolute;
+    transition: all .5s;
+}
+input[type="checkbox"]:checked ~ nav
+{
+transform: translateX(350px);
+}
+
+ul{
+top: 70px;
+position: absolute;
+width: 100%;
+}
+
+a{
+    display: block;
+    padding: 20px 5px;
+}
+a:hover{
+   background-color: #8F48CB;
+   color: #24152F; 
+}
+label{
+    padding: 15px;
+    position: absolute;
+    z-index: 1;
+}
+p{
+    color: white;
+    text-align: center;
+    font-family:"BluuNextBold";
+    font-size: 40px;
+    margin-right: 100px;
+}
+
+input#buscador{
+    width: 400px;
+    height: 69px;
+    background-color: white;
+    outline: none;
+    border: 0px;
+    color: #8F48CB;
+    font-size: 30px;
+    text-align: center;
+    padding-right: 150px;
+    background-image: url("search1.jpg");
+    background-repeat: no-repeat;
+    background-position: right;
+    margin-top: 50px;
+}
+::-webkit-input-placeholder{
+   color: #24152F; 
+   text-align: right;
+   opacity: .1;
+   
+}
