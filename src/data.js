@@ -1,4 +1,3 @@
-
 const filtroPorOcupacion = (rol, POTTER) => POTTER.filter((e) => e[rol]);
 // FILTRO PARA ROLES
 

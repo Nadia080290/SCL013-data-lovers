@@ -103,6 +103,20 @@
     display: block;
     padding: 20px 40px 10px;
   }
+.search-box{
+    width: 80%;
+    height: 100%;
+    margin-top: 0px;
+    padding: 1em;
+    background: #EA9085;
+    border: none;
+    font-size: 0.8em;
+    color: #fff;
+    padding-left: 15px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
   
   .btn-menu li:hover a, .btn-menu li a:focus {
     background-color:#EA9085;
@@ -364,209 +378,3 @@
     top: 0px;
   }
   
-  /* Small devices (landscape phones, 376px and up) */
-/*
-  @media (min-width: 375px) {
-    body {
-      background-image: url("http://getwallpapers.com/wallpaper/full/0/7/d/263156.jpg");
-      background-size: 390%;
-      background-attachment: fixed;
-      background: no-repeat, cover;
-      background-position: center, center;
-    }
-  }
-  
-  @media (min-width: 568px) {
-    body {
-      background-image: url("http://getwallpapers.com/wallpaper/full/0/7/d/263156.jpg");
-      background-size: 110%;
-      background-attachment: fixed;
-      background: no-repeat, cover;
-      background-position: center, center;
-    }
-  
-    /* Logo alterno del menú más pequeño
-    .alternLogoMenu {
-      width: 15%;
-      margin: 4% 5% 3%;
-    }
-  
-    /* Estilos del icono del menu
-  
-    .iconMenu1, .iconMenu2 {
-      width: 3%;
-      height: auto;
-    }
-  }
-  
-  @media (min-width: 640px) {
-    body {
-      background-image: url("http://getwallpapers.com/wallpaper/full/0/7/d/263156.jpg");
-      background-size: 110%;
-      background-attachment: fixed;
-      background: no-repeat, cover;
-      background-position: center, center;
-    }
-  }
-  
-  @media (min-width: 734px) {
-    body {
-      background-image: url("http://getwallpapers.com/wallpaper/full/0/7/d/263156.jpg");
-      background-size: 110%;
-      background-attachment: fixed;
-      background: no-repeat, cover;
-      background-position: center, center;
-    }
-  }
-  
-  /* Medium devices (tablets, 768px and up) 
-  @media (min-width: 760px) {
-    nav {
-      background-color: rgba(18, 18, 48, 0.91);
-      width: 50%;
-      height: 100%;
-      left: -50%;
-      transition: all 0.5s;
-      position: fixed;
-      top: 0;
-      z-index: 1;
-    }
-  
-    input[type='checkbox']:checked ~ nav {
-      transform: translateX(100%);
-    }
-  
-    /* Logo alterno del menú más pequeño
-  
-    .alternLogoMenu {
-      width: 25%;
-      margin: 5% 7% 3%;
-    }
-  
-    /*Esto es para el buscador del menu principal
-  
-    .container-4 {
-      margin: 5% 0;
-    }
-  
-    /* Estilos del icono del menu
-  
-    .iconMenu1, .iconMenu2 {
-      width: 7%;
-      height: auto;
-    }
-  
-    .HPLogoAlterno {
-      width: 12.5%;
-      margin-top: 20px;
-      margin-bottom: 25px;
-    }
-  }
-  
-  @media (min-width: 768px) {
-    body {
-      background-image: url("http://getwallpapers.com/wallpaper/full/0/7/d/263156.jpg");
-      background-size: 230%;
-      background-attachment: fixed;
-      background: no-repeat, cover;
-      background-position: center, center;
-    }
-  }
-  
-  /* Large devices (tablets, desktops, 992px and up) *
-  @media (min-width: 992px) {
-  
-    body {
-      display: flex;
-      flex-direction: row;
-      background-image: url("http://getwallpapers.com/wallpaper/full/0/7/d/263156.jpg");
-      background-size: 317%;
-      background-attachment: fixed;
-    }
-  
-    main {
-      width: 70%;
-    }
-  
-    header {
-      width: 30%;
-    }
-  
-    nav {
-      background-color: rgba(18, 18, 48, 0.91);
-      width: 30%;
-      height: 100%;
-      left: -0px;
-      transition: all 0.5s;
-      position: fixed;
-      top: 0;
-      z-index: 1;
-      overflow: hidden;
-    }
-  
-    input[type='checkbox']:checked ~ nav {
-      transform: translateX(0%);
-    }
-  
-    /*Esto es para el ícono buscador del menu principal*
-  
-    .container-4 button.icon {
-      width: 17%;
-      margin-left: -17%;
-    }
-  
-    .container-4:hover button.icon, .container-4:active button.icon, .container-4:focus button.icon{
-      outline: none;
-      opacity: 1;
-      margin-left: -17%;
-    }
-  
-  }
-  
-  @media (min-width: 1024px) {
-    body {
-      background-image: url("http://getwallpapers.com/wallpaper/full/0/7/d/263156.jpg");
-      background-size: 123%;
-      background-attachment: fixed;
-      background: no-repeat, cover;
-      background-position: center, center;
-    }
-  }
-  
-  /* Extra large devices (large desktops, 1200px and up) *
-  @media (min-width: 1200px) {
-    body {
-      display: flex;
-      flex-direction: row;
-      /* background-image: url("http://getwallpapers.com/wallpaper/full/0/7/d/263156.jpg"); *
-      /* background-clip: url("audio/Harry_Potter_Diagon_Alley_hd.mp4"); *
-      background-size: 100%;
-      background-attachment: fixed;
-    }
-  
-    main {
-      width: 80%;
-    }
-  
-    header {
-      width: 20%;
-    }
-  
-    .HPLogoAlterno {
-      width: 9.5%;
-      margin-bottom: 37px;
-      margin-top: 20px;
-    }
-  
-    nav {
-      background-color: rgba(18, 18, 48, 0.91);
-      width: 20%;
-      height: 100%;
-      left: -0px;
-      transition: all 0.5s;
-      position: fixed;
-      top: 0;
-      z-index: 1;
-    }
-  }
-  */
