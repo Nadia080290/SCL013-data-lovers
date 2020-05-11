@@ -1,39 +1,99 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-  <head>
-    <meta charset="utf-8">
-    <title>Data Lovers</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
+  <!DOCTYPE html>
+  <html lang="es">
+    <head>
+      <meta charset="UTF-8">
+      <title>Data Lovers</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <link rel="stylesheet" href="style.css"/>
+    </head>
+    <body> 
 
-  <header>
+     <header>
+
     <input type="checkbox" id="chec">
     <label for="chec">
-      <img src="pngocean.com.png">
+    <img src="pngocean.com.png">
     </label>
-  <nav id="seleccion">
-      <ul>
-        <li>
-          <input type="text" id="buscador" placeholder="search">
-        </li>
-        <li><a href="">Genero</a></li>
-        <li><a href="">Ocupacion</a></li>
-        <li><a href="">Casa</a></li>
-        <li><a href="">Especie</a></li>
-        <li><a href="">Ascendencia</a></li>
 
-      </ul>  
-    </nav> 
-  </header>
+       <nav class="nav hide" id="nav">
+    
+        <img src="wizarding.jpg" class="alternLogoMenu">
 
-  <body> 
+            <div class="search-box" id="botonbusca">
+              <label for="">Buscar personaje por nombre</label>
+              <br>
+              <input class="search-texto " id="buscarData" type="text" value="" placeholder="Buscar por nombre">
+              <a class = "search-btn" href="#">
+                <i class="fas fa-search"></i>
+              </a>
+            </div>
 
-  <p>Wizarding Worl</p>
-<br>
-  <p>Revisa los peronajes disponibles y sus caracteristicas haciendo CLIC en la imagen</p>
+        <ul id="principalMenuList">
 
+          <li class="btn-menu"><a>Ocupación
+            <hr></a>
+            <ul id="ocupacion">
+              <li class="btn-option"><a id="hogwartsStudent" href="#"> Estudiante </a></li>
+              <li class="btn-option"><a id="hogwartsStaff" href="#"> Profesor </a></li>
+            </ul>
+          </li>
 
-    <script src="main.js" type="module"></script>  
-  </body>
+          <li class="btn-menu"><a>Casa
+            <hr></a>
+            <ul id = "casas">
+                  <li class="btn-option"><a id="Slytherin" href="#">Slytherin</a></li>
+             <li class="btn-option"><a id="Gryffindor" href="#">Gryffindor</a></li>
+           <li class="btn-option"><a id="Hufflepuff" href="#">Hufflepuff</a></li>
+              <li class="btn-option"><a id="Ravenclaw" href="#">Ravenclaw</a></li>
+            </ul>
+          </li>
 
-</html>
+          <li class="btn-menu"><a>Género
+            <hr></a>
+            <ul id ="genero">
+              <li><a id="male" href="#">Masculino</a></li>
+              <li><a id="female" href="#">Femenino  </a></li>
+            </ul>
+          </li>
+
+          <li class= "btn-menu"><a> Ordenar
+            <hr></a>
+            <ul id="ordenar">
+              <li><a id="a" href="#">A-Z</a></li>
+              <li><a id="b" href="#">Z-A</a></li>
+              </ul>
+            </li>
+
+            <li class= "btn-menu"><a>Hechizo
+              <hr></a>
+              <ul id="hechizo"></ul>
+              </li>
+            </li>
+          </li>
+
+          <li class= "btn-menu"><a>Varitas
+            <hr></a>
+            <ul id="varitas"></ul>
+            </li>
+          </li>
+        </ul>
+        </nav> 
+
+        <div id="tituloharry">  
+          <img src="LOGO HPW.png" alt="Personas de Harry potter" class="titulo"></div>
+       
+    
+          <div id="arrPotter" class="imagenPersonajes hide"></div>
+        </ul> 
+    </header>
+  </div> 
+    <main>
+    <div class="pantalla1" id="vista-uno">
+      <img class ="wizardingworld" src="wizardingworld-j.jpg" alt="portada">
+      <button type="button" id ="btn-bienvenida" class="btn-bienvenida"><strong>Ingresar</strong></button>
+    </div>
+    </main>
+      <script type="module" src="main.js"></script>
+    </body>
+  </html>
