@@ -1,6 +1,5 @@
-import data from './../data/potter/potter.js';
 import POTTER from './data/potter/potter.js';
-import {filtroPorOcupacion,filtroPorCasas, filtroPorGenero, ordenarAscendente, buscador,filterEspecie, filterWands} from './data.js';
+import {filtroPorOcupacion,filtroPorCasas, filtroPorGenero, ordenarAscendente, buscador, filterEspecie} from './data.js';
 
 const cajaImagenes = document.querySelector('#arrPotter');
 const cajaOcupacion = document.querySelector('#ocupacion');
@@ -71,6 +70,12 @@ cajaCasas.addEventListener('click', (event) => {
 cajaGenero.addEventListener('click', (event) => {
   const generoCapturada = event.target.id;
   cajaImagenes.innerHTML = generarTemplateString(filtroPorGenero(generoCapturada, POTTER));
+});
+
+//Ordenar por especies
+cajaEspecies.addEventListener('click', (event) => {
+  const especieCapturada = event.target.id;
+  cajaImagenes.innerHTML = generarTemplateString(filterEspecie(especieCapturada, POTTER));
 });
 
 btnBienvenida.addEventListener('click', () => {

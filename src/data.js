@@ -22,6 +22,16 @@ const filtroPorGenero = (genero, POTTER) => {
   return filtraGenero;
 };
 
+
+//Filtrar por Especies.
+export const filterEspecie = (especie, POTTER) => {
+  const especieFiltrada = POTTER.filter((e) => e.species === especie);
+  console.log(especieFiltrada);
+  
+  return especieFiltrada;
+};
+
+
 const ordenarAscendente = (POTTER) => POTTER.sort((a, b) => {
   reestablecerCajitaImagenes();
   if (a.name > b.name) {
