@@ -1,0 +1,320 @@
+* {
+  font-family: 'Marcellus SC';
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url(fondomorado3.jpg);
+  background-attachment: fixed;
+  background: cover;
+  display: flex;
+  -moz-background-size: cover;
+    -webkit-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+/*Esto es para aparecer y desaparecer pantallas*/
+
+.hide {
+  display: none !important;
+}
+
+/* Estilos del menu principal*/
+
+nav {
+  background-color: #2c003e;
+  width: 30%;
+  height: 100%;
+  left: -30%;
+  transition: all 0.5s;
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  overflow: scroll;
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+label > img {
+  padding: 15px;
+  z-index: 2;
+  top: 3%;
+  width: 182px;
+  position: fixed;
+ 
+}
+input[type='checkbox'] {
+  display: none;
+}
+
+input[type='checkbox']:checked ~ nav {
+  transform: translateX(100%);
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  display: block;
+  padding: 20px 40px 10px;
+}
+
+.btn-menu li:hover a, .btn-menu li a:focus {
+  background-color:#EA9085;
+  color: #300E4A;
+}
+
+#principalMenuList {
+  list-style: none;
+  top: 140px;
+  width: 100%;
+  font-size: 25px;
+}
+
+.btn-menu li a {
+  padding: 20px 40px 20px 80px;
+}
+
+/* Estilos de las subcategorías del menú principal */
+
+#nav li a {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  text-decoration: none;
+  font-size: 28px;
+  line-height: 24px;
+  color: #ffffff;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  font-family: 'Marcellus SC';
+}
+
+#nav li ul {
+  height: 0;
+  overflow: hidden;
+}
+
+#nav li:hover ul, #nav li:focus ul {
+  height: auto;
+}
+
+#nav li:hover li a, #nav li:focus li a {
+  font-family: 'Marcellus SC';
+  font-size: 25px;
+  line-height: 5px;
+}
+
+/* Estilos de subrayado de opciones de menú*/
+
+hr {
+  width: 100%;
+  color:#FFA372;
+  margin: 10px 0px 0px;
+  filter: blur(5px);
+}
+
+/*Estilo del logo alterno del Menu */
+.alternLogoMenu {
+  width: 25%;
+  margin: 3% 5% 15%;
+  cursor: pointer;
+  align-self: flex-end;
+  border-radius: 10px 10px 10px 10px;
+
+}
+  /*Esto es para el buscador del menu principal*/
+.search-box{
+  margin: -26px 68px;
+  border-radius: 86px;
+  padding: 0px;
+  color: white;
+  font-size: 22px;
+  align-content: center;
+}  
+.search-texto{
+  height: 40px;
+  width: 220px;
+  border-radius: 10px 10px 10px 10px;
+  margin-left: 30px;
+  margin-right: auto;
+}
+/* Titulo de Personajes */
+.titulo{
+  align-self: center;
+  margin: 1% 32% 2%; 
+  width: 38%;
+}
+.map{
+ width: 11%;
+ float: right;
+ margin-top: -14%;
+ margin-right: 5%;
+}
+
+/* Estilos de los cards de personajes*/
+
+#arrPotter{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  color: #ffffff;
+}
+#insertWands{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.mi-imagen {
+  display: inline-block;
+  width: 55%;
+  height: 58%;
+  margin: 65px auto auto;
+  border-radius: 10px;
+}
+
+.flip-card {
+  width: 300px;
+  height: 420px;
+  padding: 20px;
+  margin: 10px;
+  display: inline-block;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%; /* 410.7px */
+  backface-visibility: hidden;
+  border-radius: 15px;
+}
+
+.flip-card-front {
+  background-color: #2C003E;
+}
+
+.flip-card-back {
+  color: white;
+  transform: rotateY(180deg);
+  background-color: #2C003E;
+  text-align: start;
+  font-size: 17px;
+}
+
+h1 {
+  font-size: 1.500em;
+  margin: 20px 20px 20px;
+  text-align: center;
+}
+
+h2 {
+  font-size: 1.500em;
+  color: #ffffff;
+  text-align: center;
+  margin: 20px 65px;
+}
+p {
+  font-size: 1.000em;
+  margin: 9px 20px;
+}
+
+li {
+  list-style-type: none;
+}
+
+/*pagina bienbenida*/
+
+.btn-bienvenida {
+  background-color: transparent;
+  border-bottom: transparent;
+  display: flex;  
+  width: 174px;
+  color: #D4AF37;
+  text-align: center;
+  padding: 65px 40px;
+  transition: all 500ms ease;
+  position: absolute;
+  margin: auto;
+  left: 0;
+  right: 81px;
+  bottom: 84px;
+  font-size: 2.9em;
+  border: 0px hidden #000000;
+  font-family: Bluu Next,serif;
+}
+
+.wizardingworld {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0px;
+}
+/* Estilos de cards de varitas */
+
+.wand-card {
+background-color: #2c003e;
+border-radius: 10px;
+display: flex;
+width: 320px;
+height: 205px;
+align-items: center;
+justify-content: space-evenly;
+margin: 20px;
+}
+
+.wand-card-photo {
+width: 30%;
+height: 70%;
+border-radius: 10px;
+}
+
+.wand-description {
+display: flex;
+justify-content: center;
+flex-direction: column;
+color: white;
+width: 46%;
+height: 90%;
+}
+
+.wand-description li {
+margin: 2% 0;
+font-size: 110%;
+}
+
+.wand-description h1 {
+margin: 2% 0;
+font-size: 130%;
+}
+
+@media (min-width: 768px) and (max-width: 1300px){
+
+.section{
+    flex-direction: column;
+}
+.menu{
+    flex-direction: column;
+    height:auto;
+}
+}
