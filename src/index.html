@@ -13,7 +13,7 @@
 
   <input type="checkbox" id="chec">
   <label for="chec">
-    <img src="pngocean.com.png">
+    <img src="iconomenu1.png" class="hab hide" id="hab">
   </label>
 
      <nav class="nav hide" id="nav">
@@ -21,7 +21,8 @@
       <img src="wizarding.jpg" class="alternLogoMenu">
 
           <div class="search-box" id="botonbusca">
-            <label for="">Buscar personaje por nombre</label>
+            <label for="">Busca aqui tu personaje favorito</label>
+            <br>
             <br>
             <input class="search-texto " id="buscarData" type="text" value="" placeholder="Buscar por nombre">
             <a class = "search-btn" href="#">
@@ -52,8 +53,18 @@
         <li class="btn-menu"><a>Género
           <hr></a>
           <ul id ="genero">
-            <li><a id="male" href="#">Masculino</a></li>
-            <li><a id="female" href="#">Femenino  </a></li>
+            <li><a id="Masculino" href="#">Masculino</a></li>
+            <li><a id="Femenino" href="#">Femenino  </a></li>
+          </ul>
+        </li>
+
+        <li class="btn-menu"><a>Especie
+          <hr></a>
+          <ul id ="ordenarEspecie">
+            <li><a id="cat" href="#">Gato</a></li>
+            <li><a id="werewolf" href="#">Hombre Lobo</a></li>
+            <li><a id="Humano" href="#">Humano</a></li>
+            <li><a id="half-giant" href="#">Medio Gigante</a></li>
           </ul>
         </li>
 
@@ -65,26 +76,28 @@
             </ul>
           </li>
 
-          <li class= "btn-menu"><a>Hechizo
-            <hr></a>
-            <ul id="hechizo"></ul>
-            </li>
-          </li>
+        <li class= "btn-menu"><a>Varitas y Hechizos
+          <hr></a>
+            <ul id="varitas">
+            <li><a id="todaslasvaritas" href="#">Varitas Mágicas y Patronus</a></li>
+            </ul>
         </li>
 
-        <li class= "btn-menu"><a>Varitas
-          <hr></a>
-          <ul id="varitas"></ul>
-          </li>
-        </li>
       </ul>
       </nav> 
 
       <div id="tituloharry">  
         <img src="LOGO HPW.png" alt="Personas de Harry potter" class="titulo"></div>
-     
+      
+        <div id="mapaCastillo">  
+          <a href="https://www.wizardingworld.com">
+          <img src="castillo.gif" alt="mapaCastillo" class="map">
+        </a></div>
   
         <div id="arrPotter" class="imagenPersonajes hide"></div>
+        
+        <div id="insertWands" class="varitas"></div>
+        
       </ul> 
   </header>
 </div> 
@@ -95,5 +108,6 @@
   </div>
   </main>
     <script type="module" src="main.js"></script>
+  <footer></footer>
   </body>
 </html>
