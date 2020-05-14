@@ -128,7 +128,7 @@ const cajaVaritasHarry = (data) => {
  return templatePotter;
 };
 
-opcionVarita.addEventListener('click', (event) => {
+opcionVarita.addEventListener('click',() => {
   cajaImagenes.classList.add('hide');
   cajavaritas.classList.remove('hide');
   cajavaritas.innerHTML = cajaVaritasHarry(POTTER);
