@@ -1,6 +1,6 @@
 import POTTER from './data/potter/potter.js';
-import {filtroPorOcupacion,filtroPorCasas, filtroPorGenero, ordenarAscendente, buscador, filterEspecie} from './data.js';
-
+import {filtroPorOcupacion,filtroPorCasas, filtroPorGenero, ordenarAscendente, buscador, filterEspecie} from './data.js'; // Se importa las funciones desde main.js.
+// Se crean variables llamando a los id.
 const cajaImagenes = document.querySelector('#arrPotter');
 const cajaOcupacion = document.querySelector('#ocupacion');
 const cajaCasas = document.querySelector('#casas');
@@ -13,7 +13,7 @@ const menuHamburguesa = document.querySelector("#hab");
 const cajaEspecies = document.querySelector('#ordenarEspecie');
 const cajavaritas = document.querySelector('#insertWands');
 const opcionVarita = document.querySelector('#varitas');
-
+const porNombre = document.getElementById('buscarData'); 
 const alternLogoMenu = document.querySelector('.alternLogoMenu');
 
 // Función para volver al inicio haciendo click en logo alterno del Menú
@@ -24,8 +24,8 @@ alternLogoMenu.addEventListener('click', () => {
 
 //tarjetas personajes info completa.
 const generarTemplateString = (data) => {
-  let templateString = '';
-  data.forEach((obj) => {
+  let templateString = ''; // Se crea variable vacia para sacar valor del forEach
+  data.forEach((obj) => { // Se realiza for que recorra la data.
     templateString += ` 
     <div class="flip-card">
     <div class="flip-card-inner">
@@ -54,30 +54,36 @@ const generarTemplateString = (data) => {
   });
   return templateString;
 };
-
+// Se imprime en enconsola las tarjetas de los personajes.
 cajaImagenes.innerHTML = generarTemplateString(POTTER);
 
-cajaOcupacion.addEventListener('click', (event) => {
-  const ocupacionCapturada = event.target.id;
-  cajaImagenes.innerHTML = generarTemplateString(filtroPorOcupacion(ocupacionCapturada, POTTER));
+cajaOcupacion.addEventListener('click', (event) => { // Se realiza evento que se ejecute con click, cuando el usuario seleccione una de las opciones de Ocupacion
+  const ocupacionCapturada = event.target.id; //Se guarda la seleccion del usuario.
+  cajaImagenes.innerHTML = generarTemplateString(filtroPorOcupacion(ocupacionCapturada, POTTER)); //Se imprime en pagina las nuevas cartas filtrada por Ocupacion. 
+  reestablecerCajitaImagenes(); // se llama a la funcion de esconder cartas de varitas.
 });
 
-cajaCasas.addEventListener('click', (event) => {
-  const casaCapturada = event.target.id;
-  cajaImagenes.innerHTML = generarTemplateString(filtroPorCasas(casaCapturada, POTTER));
+cajaCasas.addEventListener('click', (event) => { //Se realiza evento para activar el filtro por Casas.
+  const casaCapturada = event.target.id; //Se guarda la seleccion del usuario.
+  cajaImagenes.innerHTML = generarTemplateString(filtroPorCasas(casaCapturada, POTTER)); //Se imprime en la pagina las nuevas cartas filtrada por Casas.
+  reestablecerCajitaImagenes(); // se llama a la funcion de esconder cartas de varitas.
 });
 
-cajaGenero.addEventListener('click', (event) => {
-  const generoCapturada = event.target.id;
-  cajaImagenes.innerHTML = generarTemplateString(filtroPorGenero(generoCapturada, POTTER));
+cajaGenero.addEventListener('click', (event) => { //Se realiza evento que activa el filtro por Genero
+  const generoCapturada = event.target.id; //Se guarda la seleccion del usuario.
+  cajaImagenes.innerHTML = generarTemplateString(filtroPorGenero(generoCapturada, POTTER)); //Se imprime en la pagina las nuevas cartas filtrada por Genero.
+  reestablecerCajitaImagenes(); // se llama a la funcion de esconder cartas de varitas.
 });
 
 //Ordenar por especies
-cajaEspecies.addEventListener('click', (event) => {
-  const especieCapturada = event.target.id;
-  cajaImagenes.innerHTML = generarTemplateString(filterEspecie(especieCapturada, POTTER));
+cajaEspecies.addEventListener('click', (event) => { //Se realiza evento que activa el filtro por Especie
+  const especieCapturada = event.target.id; //Se guarda en una variable la seleccion del usuario.
+  cajaImagenes.innerHTML = generarTemplateString(filterEspecie(especieCapturada, POTTER)); // Se imprime en la pagina las nuevas cartas filtrada por Especie.
+  reestablecerCajitaImagenes(); // se llama a la funcion de esconder cartas de varitas.
 });
 
+
+//Se realiza evento que con un click se esconda la primera pagina y muestre los personajes.
 btnBienvenida.addEventListener('click', () => {
   portada.classList.add('hide');
   headerView.classList.remove('hide');
@@ -86,32 +92,29 @@ btnBienvenida.addEventListener('click', () => {
   
 });
 
-ordenando.addEventListener('click', (event) => {
-  if (event.target.id === 'a') {
-    cajaImagenes.innerHTML = generarTemplateString(ordenarAscendente(POTTER));
+ordenando.addEventListener('click', (event) => { //Se realiza evento para ordenar
+  if (event.target.id === 'a') { //Se indica que si la seleccion del usuario es igual a ordenar de A-Z
+    cajaImagenes.innerHTML = generarTemplateString(ordenarAscendente(POTTER)); // se imprimen las cartas ordenadas por nombre de A-Z
   } else {
-    cajaImagenes.innerHTML = generarTemplateString(ordenarAscendente(POTTER).reverse());
+    cajaImagenes.innerHTML = generarTemplateString(ordenarAscendente(POTTER).reverse()); // De lo contrario se imprime las cartas ordenadas por nombre de Z-A
   }
+  reestablecerCajitaImagenes(); // se llama a la funcion de esconder cartas de varitas.
 });
 
 // BUSCADOR
-const porNombre = document.getElementById('buscarData');
-porNombre.addEventListener('input', (event) => {
-  cajaImagenes.innerHTML = generarTemplateString(buscador(POTTER, event.target.value));
+
+porNombre.addEventListener('input', (event) => { //Se realiza evento para el buscador
+  cajaImagenes.innerHTML = generarTemplateString(buscador(POTTER, event.target.value)); //se imprimen cartas que el usuario busca en tiempo real.
+  reestablecerCajitaImagenes(); // se llama a la funcion de esconder cartas de varitas.
 });
 
-//Ordenar por especies
-cajaEspecies.addEventListener('click', (event) => {
-  const especieCapturada = event.target.id;
-  cajaImagenes.innerHTML = generarTemplateString(filterEspecie(especieCapturada, POTTER));
-});
 
 
 // Función que crea cards mostrando descripción de varitas
 const cajaVaritasHarry = (data) => {
   // console.log(data);
-  let templatePotter = '';
-  data.forEach((obj) => {
+  let templatePotter = ''; // Se crea variable vacia para sacar valor del forEach
+  data.forEach((obj) => { // Se realiza for que recorra la data.
     templatePotter += `
     <div class="wand-card">
       <img src="${obj.image}" alt="Image" class="wand-card-photo"/>
@@ -128,12 +131,13 @@ const cajaVaritasHarry = (data) => {
  return templatePotter;
 };
 
-opcionVarita.addEventListener('click',() => {
+opcionVarita.addEventListener('click',() => { // Se crea evento para mostrar tarjetas de varita y esconder las tarjetas de personajes.
   cajaImagenes.classList.add('hide');
   cajavaritas.classList.remove('hide');
   cajavaritas.innerHTML = cajaVaritasHarry(POTTER);
 });
 
-
-  
-  
+const reestablecerCajitaImagenes = () => { // se crea Evento para que se escondan las cartas de varita.
+  cajavaritas.classList.add('hide');
+  cajaImagenes.classList.remove('hide');
+}
