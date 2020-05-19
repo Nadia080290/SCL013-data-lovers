@@ -5,7 +5,6 @@ const filtroPorOcupacion = (rol, POTTER) => { // Se crea una funcion donde estab
 
 };
 
-
 // Función filtrar por Casa
 const filtroPorCasas = (casa, POTTER) => { // Se crea una funcion donde establecemos dos parametros (1. La seleccion del Usuario, 2. La data).
   const filtraCasa = POTTER.filter((e) => e.house === casa); // Se crea una variable donde se guarda la aplicacion del metodo filter para crear un nuevo a
