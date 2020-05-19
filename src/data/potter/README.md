@@ -3,13 +3,17 @@
 ## Índice
 
 [1. Definición de producto](#intro)
+
 [2. Historias de Usuarios](#historias)
+
 [3. Diseño de interfaz del usuario](#diseño)
+
 [4. Organización del trabajo](#organizacion)
 
 ***
 
-<a id="intro"> :star: Definición de producto:¿Que es Wizards Unite: Harry Potter? :start:<a>
+
+<a id="intro"> :star: Definición de producto:¿Que es Wizards Unite: Harry Potter? :star:<a>
 
 Wizards Unite:Harry Potter es una página web dirigida a jugadores novatos que quieren incursionar en la de saga Harry Potter. Dentro de esta página el usuario podrá conocer,  cada personaje con sus características e información del actor que le dio vida de cada personaje.
 
@@ -27,6 +31,7 @@ El usuario que quiera incursionar podra encontrar las caracteristicas de cada pe
 
 
 <a id ="historias"> :star: Historias de usuarios :star: <a>
+
 1. **Historia de usuario:**
 Como: Usuario. Quiero: ingresar en buscador de personajes. Para: Ver datos de personas
 Criterios de aceptación
@@ -80,7 +85,7 @@ Terminado: Mostrar la página de inicio.
 <a id="diseño"> :star: Diseño de interfaz del usuario :star: <a>
 
  **Acá nuestro prototipo de baja en papel**
-![Prototipo de baja](prototipopapel.jpg)
+![Prototipo de baja](Prototipo.jpg)
 
   **Prototipo de alta Fidelidad**
 [Acá puedes ver nuestro prototipo de alta](https://www.figma.com/file/QSCp5wZF1agIjs9de9Hkiz/Prototipo-Final-Harry?node-id=1%3A6)
@@ -109,4 +114,5 @@ Terminado: Mostrar la página de inicio.
   Este proyecto lo organizamos por medio de la herramineta Trello, establecimos las actividades a realizar en el proyecto tomando en cuenta las Historias de usuarios.
 
   **Imagen de Trello** 
-  <img src ="..\SCL013-DATA-LOVERS\img\Trello.jps" style="max-width:100%;">
+ 
+![Prototipo de baja](Trello.png)
