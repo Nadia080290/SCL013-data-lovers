@@ -1,26 +1,37 @@
-# Mundo de Harry Potter 
+:dizzy:Wizards Unite: Harry Potter:dizzy:
  
 ## Índice
 
-1. ## Definición de producto
-2. ## Historias de Usuarios.
-3. ## Diseño de interfaz del usuario.
-4. ## Organización del trabajo.
+[1. Definición de producto](#intro)
 
-## 1. Definición de producto: 
-Mundo Harry Potter es una página web dirigida a jugadores novatos que quieren incursionar en la de saga Harry Potter. Dentro de esta página el usuario podrá conocer,  cada personaje con sus características e información del actor que le dio vida de cada personaje.
+[2. Historias de Usuarios](#historias)
+
+[3. Diseño de interfaz del usuario](#diseño)
+
+[4. Organización del trabajo](#organizacion)
+
+***
+
+
+<a id="intro"> :star: Definición de producto:¿Que es Wizards Unite: Harry Potter? :star:<a>
+
+Wizards Unite:Harry Potter es una página web dirigida a jugadores novatos que quieren incursionar en la de saga Harry Potter. Dentro de esta página el usuario podrá conocer,  cada personaje con sus características e información del actor que le dio vida de cada personaje.
 
 Para ser el uso efectivo de esta herramienta el usuario deberá ingresar a la página web donde conseguirá un mensaje de bienvenida y podrá acceder a los personajes de esta historia por medio de un click. Una vez ingrese el usuario podrá visualizar todos los personajes  de la saga con fotos referenciales e información de cada uno.
 
 El objetivo principal de esta página es facilitar la búsqueda a través de filtros donde el usuario podrá elegir  características específicas como: casa, especie,  género, ocupación que lo ayudara a conocer más de la  historia del mundo mágico llenos de hechizos. A demás de ello el usuario tendrá la opción de ordenar los personajes alfabéticamente de la A-z y viceversa.
 
 **¿Quiénes son los principales usuarios del producto?**
-Personas que quieran incursionar en el mundo de Harry Potter.
+Personas que quieran incursionar en el juego wizards Unite: Harry Potter y no tengan mucho conocimiento previo respecto a todas las caracteristicas de los perdonajes de la saga.
 
 **¿Como crees que el producto que estas creando resuelve el problema del usuario?**
-El usuario puede entrar al juego conociendo las principales características de los personajes.
+El usuario que quiera incursionar podra encontrar las caracteristicas de cada personaje y podra filtrar diferentes parametros para que al momento de juegar el personaje escogido cumpla con las caracteristicas que el busca.
 
-## 2. Historias de usuarios:
+***
+
+
+<a id ="historias"> :star: Historias de usuarios :star: <a>
+
 1. **Historia de usuario:**
 Como: Usuario. Quiero: ingresar en buscador de personajes. Para: Ver datos de personas
 Criterios de aceptación
@@ -69,26 +80,43 @@ Criterios de aceptación
 Dado: El usuario de click al botón de volver a la página de inicio. Cuando: Se carga la página. Entonces: Vuelve a la página principal donde se muestran las cartas de todos los personajes.
 Terminado: Mostrar la página de inicio.
 
-3. ## Diseño de interfaz del usuario.
+***
 
-  **Prototipo a lápiz**
-  <img src ="..\SCL013-DATA-LOVERS\img\Prototipo a lápiz.jps" style="max-width:100%;">
+<a id="diseño"> :star: Diseño de interfaz del usuario :star: <a>
+
+ **Acá nuestro prototipo de baja en papel**
+![Prototipo de baja](Prototipo.jpg)
 
   **Prototipo de alta Fidelidad**
-  <a href="https://www.figma.com/proto/QSCp5wZF1agIjs9de9Hkiz/Untitled?node-id=97%3A521&scaling=min-zoom">https://www.figma.com/proto/QSCp5wZF1agIjs9de9Hkiz/Untitled?node-id=97%3A521&scaling=min-zoom</a>
+[Acá puedes ver nuestro prototipo de alta](https://www.figma.com/file/QSCp5wZF1agIjs9de9Hkiz/Prototipo-Final-Harry?node-id=1%3A6)
+![fotos figma](pantalla1.png)
 
-  **Resumen del feedback recibido indicando las mejoras a realizar**
 
-  Al mostrar el prototipo de alta fidelidad los usuarios nos indicaron que los colores no eran atractivos, por lo que tomamos la decisión de mantene la estructura y el concepto de la pagina e ir cambiando el fondo y los colores de la intervaz durante el desarrollo del codigo para asi lograr que fuese atractivo para los usuarios.  
+**Resumen del feedback recibido indicando las mejoras a realizar**
 
-  Al mostrar del desarrollo del codigo los usuarios indicaron que la pagina Web era facil de enteder y los colores he imagenes eran atractivos.
+  Al testiar el prototipo de alta fidelidad los usuarios nos indicaron que los colores del fondo y menu no eran atractivos, por lo que tomamos la decisión de mantene la estructura y el concepto de la pagina e ir cambiando el fondo y los colores de la intervaz durante el desarrollo del codigo para asi lograr que fuese atractivo para los usuarios.  
+
+  Adicionalmente mientras testeaban la funcionalidad de la pagina, los usuarios indicaron que la pagina Web era facil de enteder y era bastante intuitivo.
 
     **Imagen final del Proyecto**
+![fotos figma](pantalla1.png)
+![fotos figma](pantalla2.png)
+![fotos figma](pantalla3.png)
+![fotos figma](pantalla4.png)
+![fotos figma](pantalla5.png)
+![fotos figma](pantalla6.png)
 
 
 
-4. ## Organización del trabajo.
-  Este proyecto lo organizamos por medio de la herramineta Trello, establecimos las actividades a realizar en el proyecto tomando en cuenta las Historias de usuarios.
+***
+
+<a id="organizacion"> :star: Organización del trabajo :star: <a>
+
+  Este proyecto lo organizamos por medio de la herramineta Trello, establecimos las actividades a realizar en el proyecto tomando en cuenta las Historias de usuarios, 
+  buscando cumplir los objetivos solicitados por el usuario para dar una solucion concreta
+  a las necesidades de nuestro usuario.
+
 
   **Imagen de Trello** 
-  <img src ="..\SCL013-DATA-LOVERS\img\Trello.jps" style="max-width:100%;">
+ 
+![Prototipo de baja](Trello.png)
