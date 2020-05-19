@@ -94,9 +94,9 @@ Terminado: Mostrar la página de inicio.
 
 **Resumen del feedback recibido indicando las mejoras a realizar**
 
-  Al mostrar el prototipo de alta fidelidad los usuarios nos indicaron que los colores no eran atractivos, por lo que tomamos la decisión de mantene la estructura y el concepto de la pagina e ir cambiando el fondo y los colores de la intervaz durante el desarrollo del codigo para asi lograr que fuese atractivo para los usuarios.  
+  Al testiar el prototipo de alta fidelidad los usuarios nos indicaron que los colores del fondo y menu no eran atractivos, por lo que tomamos la decisión de mantene la estructura y el concepto de la pagina e ir cambiando el fondo y los colores de la intervaz durante el desarrollo del codigo para asi lograr que fuese atractivo para los usuarios.  
 
-  Al mostrar del desarrollo del codigo los usuarios indicaron que la pagina Web era facil de enteder y los colores he imagenes eran atractivos.
+  Adicionalmente mientras testeaban la funcionalidad de la pagina, los usuarios indicaron que la pagina Web era facil de enteder y era bastante intuitivo.
 
     **Imagen final del Proyecto**
 ![fotos figma](pantalla1.png)
@@ -111,7 +111,11 @@ Terminado: Mostrar la página de inicio.
 ***
 
 <a id="organizacion"> :star: Organización del trabajo :star: <a>
-  Este proyecto lo organizamos por medio de la herramineta Trello, establecimos las actividades a realizar en el proyecto tomando en cuenta las Historias de usuarios.
+
+  Este proyecto lo organizamos por medio de la herramineta Trello, establecimos las actividades a realizar en el proyecto tomando en cuenta las Historias de usuarios, 
+  buscando cumplir los objetivos solicitados por el usuario para dar una solucion concreta
+  a las necesidades de nuestro usuario.
+
 
   **Imagen de Trello** 
  
