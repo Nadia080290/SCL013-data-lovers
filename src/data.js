@@ -1,29 +1,29 @@
-/*const reestablecerCajitaImagenes = () => {
+const reestablecerCajitaImagenes = () => {
   const cajaImagenes = document.querySelector('#arrPotter');
   const cajavaritas = document.querySelector('#insertWands');
   cajavaritas.classList.add('hide');
   cajaImagenes.classList.remove('hide');
-}*/
+}
 const filtroPorOcupacion = (rol, POTTER) => {
-  //reestablecerCajitaImagenes();
+  reestablecerCajitaImagenes();
   return POTTER.filter((e) => e[rol]);
 };
 // FILTRO PARA ROLES
 
 const filtroPorCasas = (casa, POTTER) => {
-  //reestablecerCajitaImagenes();
+  reestablecerCajitaImagenes();
   const filtraCasa = POTTER.filter((e) => e.house === casa);
   return filtraCasa;
 };
 
 const filtroPorGenero = (genero, POTTER) => {
-  //reestablecerCajitaImagenes();
+  reestablecerCajitaImagenes();
   const filtraGenero = POTTER.filter((e) => e.gender === genero);
   return filtraGenero;
 };
 
 const ordenarAscendente = (POTTER) => POTTER.sort((a, b) => {
-  //reestablecerCajitaImagenes();
+  reestablecerCajitaImagenes();
   if (a.name > b.name) {
     return 1;
   }
@@ -32,13 +32,13 @@ const ordenarAscendente = (POTTER) => POTTER.sort((a, b) => {
 
 //BUSCADOR
 const buscador = (data, buscame) => {
-  //reestablecerCajitaImagenes();
+  reestablecerCajitaImagenes();
   return data.filter((obj) => obj.name.toLowerCase().startsWith(buscame));
 };
 
 //Filtrar por Especies.
 export const filterEspecie = (especie, POTTER) => {
-  //reestablecerCajitaImagenes();
+  reestablecerCajitaImagenes();
   const especieFiltrada = POTTER.filter((e) => e.species === especie);
   return especieFiltrada;
 };
