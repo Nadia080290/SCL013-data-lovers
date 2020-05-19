@@ -9,7 +9,7 @@
 
 ***
 
-<a id="intro"> :star: Definición de producto:¿Que es Wizards Unite: Harry Potter? :start:<a>
+<a id="intro"> :star:Definición de producto:¿Que es Wizards Unite: Harry Potter?:star:<a>
 
 Wizards Unite:Harry Potter es una página web dirigida a jugadores novatos que quieren incursionar en la de saga Harry Potter. Dentro de esta página el usuario podrá conocer,  cada personaje con sus características e información del actor que le dio vida de cada personaje.
 
@@ -27,6 +27,7 @@ El usuario que quiera incursionar podra encontrar las caracteristicas de cada pe
 
 
 <a id ="historias"> :star: Historias de usuarios :star: <a>
+
 1. **Historia de usuario:**
 Como: Usuario. Quiero: ingresar en buscador de personajes. Para: Ver datos de personas
 Criterios de aceptación
@@ -84,14 +85,15 @@ Terminado: Mostrar la página de inicio.
 
   **Prototipo de alta Fidelidad**
 [Acá puedes ver nuestro prototipo de alta](https://www.figma.com/file/QSCp5wZF1agIjs9de9Hkiz/Prototipo-Final-Harry?node-id=1%3A6)
+
 ![fotos figma](pantalla1.png)
 
 
 **Resumen del feedback recibido indicando las mejoras a realizar**
-
+ 
   Al mostrar el prototipo de alta fidelidad los usuarios nos indicaron que los colores no eran atractivos, por lo que tomamos la decisión de mantene la estructura y el concepto de la pagina e ir cambiando el fondo y los colores de la intervaz durante el desarrollo del codigo para asi lograr que fuese atractivo para los usuarios.  
 
-  Al mostrar del desarrollo del codigo los usuarios indicaron que la pagina Web era facil de enteder y los colores he imagenes eran atractivos.
+  Al mostrar del desarrollo del codigo los usuarios indicaron que la pagina Web era facil de enteder, es intuitivo.
 
     **Imagen final del Proyecto**
 ![fotos figma](pantalla1.png)
@@ -106,6 +108,7 @@ Terminado: Mostrar la página de inicio.
 ***
 
 <a id="organizacion"> :star: Organización del trabajo :star: <a>
+
   Este proyecto lo organizamos por medio de la herramineta Trello, establecimos las actividades a realizar en el proyecto tomando en cuenta las Historias de usuarios.
 
   **Imagen de Trello** 
