@@ -39,6 +39,8 @@ export const filterEspecie = (especie, POTTER) => { // Se crea y exporta una fun
 
 };
 
+export {buscador, ordenarAscendente, filtroPorGenero, filtroPorCasas, filtroPorOcupacion}
+
 
 
 

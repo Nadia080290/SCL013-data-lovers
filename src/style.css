@@ -308,7 +308,7 @@ margin: 2% 0;
 font-size: 130%;
 }
 
-@media (min-width: 768px) and (max-width: 1300px){
+@media screen and (max-width: 980px) {
 
 .section{
     flex-direction: column;
@@ -316,5 +316,64 @@ font-size: 130%;
 .menu{
     flex-direction: column;
     height:auto;
+}
+.wizardingworld {  
+  width: 122%;
+  height: 72%;
+  left: -30px;
+  top: 120px;
+}
+.titulo {
+  margin: 6% 20% 10% 19%;
+  width: 63%;
+}
+.btn-bienvenida {
+  width: 171px;
+  color: #D4AF37;
+  text-align: center;
+  margin: auto;
+  left: 0;
+  right: 24px;
+  font-size: 2.3em;
+  border: 0px hidden #000000;
+}
+label > img {
+  padding: 36px;
+  top: 15%;
+  width: 184px;
+}
+nav {
+  width: 16em;
+  height: 45em;
+  left: -16em;
+  top: 0px;
+  display: flex;
+  opacity: 0.8;
+  cursor: pointer;
+}
+.search-box {
+  margin: -28px 21px;
+  padding: 117px 1px 1px 1px;
+  font-size: 16px;
+}
+.search-texto {
+  height: 3em;
+  width: 16em;
+  margin-left: -2px;
+}
+.alternLogoMenu {
+  width: 6em;
+  margin: 2% 2% 4%;
+}
+.map {
+    width: 17%;
+    margin-top: -15%;
+}
+#nav li a {
+  font-size: 22px;
+  line-height: 13px;
+}
+.btn-option {
+  font-size: 22px;
 }
 }
